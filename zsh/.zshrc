@@ -120,3 +120,4 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias cr="cd $(git rev-parse --show-toplevel)"
+alias vim="nvim"
