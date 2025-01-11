@@ -5,7 +5,38 @@ The dotfiles are set up using `stow`. Make sure to check out to `~/dotfiles`. To
 ```
 stow tmux
 stow nvim
-...
+```
+
+# Zsh setup
+
+Make sure the submodules for this directory are checked out so that `powerelevel10k` is loaded:
+
+```
+$ git submodule init
+$ git submodule update
+```
+
+First install oh-my-zsh:
+
+```
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Then install fzf:
+
+```
+$ brew install fzf
+```
+
+Now delete the default `.zshrc` file:
+```
+$ rm ~/.zshrc
+```
+
+Finally, stow things from zsh:
+
+```
+$ stow zsh
 ```
 
 # Appearance
